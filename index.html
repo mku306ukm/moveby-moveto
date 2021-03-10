@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="openWindow()">open Window</button>
+    <button onclick="moveWindow()">move Window</button>
+    
+    <script>
+        var myWindow;
+        function openWindow(){
+         myWindow = window.open("","","width=500px,height=200px,left=100px,top=100px");
+         myWindow.document.write("<p>this is myWindow.</p> ");
+        }
+        function moveWindow(){
+            myWindow.moveTo(400,200);
+            myWindow.focus();
+        }
+        
+            
+
+        
+        
+    </script>
+    
+</body>
+</html>
